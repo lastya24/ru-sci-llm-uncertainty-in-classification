@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.so
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# Virtual environments
+venv/
+.env
+.venv
+
+# Data files (optional – if you don't want to upload large files)
+*.csv
+*.parquet
+*.jsonl
+
+# IDE
+.vscode/
+.idea/
+
+# Model cache
+cache/
