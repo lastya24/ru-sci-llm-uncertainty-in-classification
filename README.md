@@ -16,7 +16,7 @@ Experiments are conducted on two Russian classification datasets with 10 classes
 | Dataset | Source | Domain | Classes (sample) | Train/Test |
 |---------|--------|--------|------------------|-------------|
 | **GRNTI** | `ai-forever/ru-scibench-grnti-classification` | Scientific abstracts (GRNTI rubrics) | 10 (e.g., Энергетика, Физика, Биология, Транспорт) | ~1000 / 1000 |
-| **CLINC-150 (translated)** | CLINC150 (English) → Russian (manual translation) | User intents in a chatbot | 10 (e.g., погода, налоги, рецепт, напоминание) | 90 / 10 (but we used 100 test samples) |
+| **CLINC-150 (translated)** | CLINC150 (English) → Russian (translation by LLM) | User intents in a chatbot | 10 (e.g., погода, налоги, рецепт, напоминание) | 90 / 10 (but we used 100 test samples) |
 
 > The GRNTI dataset has **low class separability** (overlapping scientific fields), while CLINC-150 has **high separability** (distinct intents).
 
