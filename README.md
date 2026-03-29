@@ -1,5 +1,7 @@
 # ru-sci-llm-uncertainty-in-classification
 
+authors: Anisimova A., Limonova A., Shatskikh A.
+
 **Uncertainty-aware classification of Russian scientific texts and user intents using Qwen2.5-1.5B-Instruct.**  
 We implement and compare three uncertainty estimation methods from the ACL 2025 survey paper *"A Survey of Uncertainty Estimation Methods on Large Language Models"* (Xia et al.):
 
