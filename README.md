@@ -7,7 +7,7 @@ We implement and compare three uncertainty estimation methods from the ACL 2025 
 
 - **Verbalized** – model outputs a class and a confidence score (0–1)
 - **Self-Consistency** – multiple generations (temperature sampling), uncertainty = agreement / entropy
-- **Latent Information** – uses token probabilities (entropy, max probability, margin, perplexity)
+- **Latent Information** – uses token probabilities (entropy, NLL, margin)
 
 Experiments are conducted on two Russian classification datasets with 10 classes each.
 
@@ -94,14 +94,14 @@ Self‑consistency performs well on the easier CLINC dataset, especially at t=1.
 
 ### Latent Information Methods
 
-| Dataset | Metric | Entropy | Max Prob | Margin | Perplexity |
-|---------|--------|---------|----------|--------|------------|
-| **GRNTI** | AUROC | 0.8197 | 0.8125 | 0.7783 | 0.8197 |
-| | AUARC | 0.7736 | 0.7686 | 0.7558 | 0.7736 |
-| **CLINC-150** | AUROC | 0.9468 | 0.9561 | 0.9320 | 0.9468 |
-| | AUARC | 0.9706 | 0.9724 | 0.9666 | 0.9706 |
+| Dataset | Metric | Entropy | NLL | Margin |
+|---------|--------|---------|----------|--------|
+| **GRNTI** | AUROC | 0.815 | 0.808 | 0.771 |
+| | AUARC | 0.768 | 0.764 | 0.749 |
+| **CLINC-150** | AUROC | 0.947 | 0.956 | 0.932 |
+| | AUARC | 0.971 | 0.972 | 0.967 |
 
-**Observation:** Latent information methods (especially max probability and entropy) achieve near‑perfect uncertainty ranking on the easy CLINC dataset. On GRNTI they are slightly better than verbalized (AUROC 0.82 vs 0.81).
+**Observation:** Latent information methods (especially negative log likelihood and entropy) achieve near‑perfect uncertainty ranking on the easy CLINC dataset. On GRNTI they are slightly better than verbalized (AUROC 0.82 vs 0.81).
 
 ---
 
