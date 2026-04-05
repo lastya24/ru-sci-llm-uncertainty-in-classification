@@ -49,9 +49,8 @@ Higher agreement → lower uncertainty.
 ### 3. Latent Information (White‑box)
 Using token‑level probabilities from the model, we compute:
 - **Entropy** of the next‑token distribution
-- **Max probability** of the generated class token
+- **NLL** (negative log‑likelihood)
 - **Margin** (difference between top‑2 probabilities)
-- **Perplexity** (average negative log‑likelihood)
 
 These scores are used as uncertainty measures.
 
